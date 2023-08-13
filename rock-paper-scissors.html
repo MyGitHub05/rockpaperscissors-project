@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+
+    <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Poppins:wght@100;200;300;400;500&family=Roboto& display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto&display=swap" rel="stylesheet">
+
+  <!--boxicon.com-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!--remixicon.com-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--styles-->
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <header>
+    
+    <a href="http://127.0.0.1:5500/rock-paper-scissors.html" class="logo">Rock Paper Scissors</a>
+
+    <ul class="nav-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Rules</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!--MENU ICON-->
+    <div class="menu-icon"><img class="menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAGZJREFUSEvtlrENACAMw8pnnMZpfAYTC1W3CDOEA2JhUpUW0GkQNwx+Zt6qj+ohdp7yKtVLDE6c78DiC+c4t/o46WLX8877rlzYOGGqxU/scYryB4KVCwNja9GtlhvwWpQrrQIx1Rt3TwofeC3yFwAAAABJRU5ErkJggg=="/></div>
+    
+
+  </header>
+
+  <section>
+    <div class="main-div">
+
+      <!--SCORE AREA!-->
+      <div class="score-area">
+        <h1>score</h1>
+        <p>Wins:<span class="score-span js-wins">0</span></p>
+        <p>Losses:<span class="js-losses">0</span></p>
+        <p>Ties:<span class="score-span js-ties">0</span></p>
+      </div>
+
+      <!--CENTER BATTLE AREA!-->
+      <div class="battle-area">
+        <h1 class="p1">Player Move</h1>
+        <div class="player-move js-player-move">
+          <img src="img/rock-emoji.png" alt="rock">
+        </div>
+        <div class="result">
+          <h1 class="js-result">RESULT</h1>
+        </div>
+        <h1 class="comp">Computers Move</h1>
+        <div class="computer-move js-computer-move">
+          <img src="img/paper-emoji.png" alt="rock">
+        </div>
+      </div>
+  
+      <!--MOVE BUTTONS!-->
+      <div>
+        <div class="button-div">
+          <button class="js-rock-button"><img src="img/rock-emoji.png" alt="rock"></button>
+          <button class="js-paper-button"><img src="img/paper-emoji.png" alt="paper"></button>
+          <button class="js-scissors-button"><img src="img/scissors-emoji.png" alt="scissors"></button>
+        </div>
+      </div>
+  
+    </div>
+
+    <!--RESET AND AUTOPLAY BUTTONS!-->
+    <div class="reset-auto-play">
+      <button class="js-reset-button">Reset</button>
+      <button class="js-auto-play-button">AutoPlay</button>
+
+    </div>
+  </section>
+  <script src="script/script.js"></script>
+  
+</body>
+</html>
